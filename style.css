@@ -1,0 +1,233 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f0ff, #ffffff);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0056b3;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 8px rgba(0, 86, 179, 0.4);
+}
+
+header input[type="search"] {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #000;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+header input[type="search"]::placeholder {
+    color: #666;
+}
+
+header .btn-login {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: solid 2px #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header .btn-login:hover {
+    background-color: #ffffff;
+    color: #0056b3;
+    border: solid 2px #0056b3;
+}
+
+header button {
+    background-color: #ffffff;
+    color: #0056b3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #cce0ff;
+}
+
+nav {
+    background-color: #333333;
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    background-color: #0056b3;
+    box-shadow: 0 0 8px #0056b3;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 86, 179, 0.3);
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #0056b3;
+    text-align: center;
+}
+
+.tramites {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    margin: 20px 0 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.tramites div {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.noticias div {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.tramites div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 86, 179, 0.3);
+}
+
+.noticias div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 86, 179, 0.3);
+}
+
+.tramites img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+.noticias img {
+    max-width: 140px;
+    margin-bottom: 15px;
+}
+
+.tramites h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.noticias h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.noticias p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+button.btn-noticias, button.btn-certificados {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto 40px auto;
+}
+
+button.btn-noticias:hover, button.btn-certificados:hover {
+    background-color: #003d80;
+}
+
+footer {
+    background-color: #0056b3;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+footer h2 {
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+footer p {
+    margin: 5px 0;
+    cursor: default;
+}
